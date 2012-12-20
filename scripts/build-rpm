@@ -11,5 +11,5 @@ fi
 set -e
 set -x
 
-tar --transform="s#source/#libcrange-${VERSION}/#" -cvzf /home/$USER/rpmbuild/SOURCES/libcrange-${VERSION}.tar.gz source/ || exit 1
+tar --transform="s#source/#libcrange-${VERSION}/#" -cvzf $HOME/rpmbuild/SOURCES/libcrange-${VERSION}.tar.gz source/ || exit 1
 rpmbuild -bb libcrange.spec
