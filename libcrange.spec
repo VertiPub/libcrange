@@ -9,7 +9,7 @@ URL:		http://github.com/ytoolshed/libcrange
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires: libyaml-devel pcre-devel apr-devel sqlite-dev
+BuildRequires: libyaml-devel pcre-devel apr-devel sqlite-devel
 Requires:      libyaml perl-ExtUtils-Embed pcre apr sqlite
 
 %description
