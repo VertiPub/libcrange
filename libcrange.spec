@@ -1,6 +1,6 @@
 Name:		libcrange
 Version:	1.0.1
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	C version of range
 
 Group:		Base
@@ -9,8 +9,8 @@ URL:		http://github.com/ytoolshed/libcrange
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires: libyaml-devel
-Requires:	libyaml
+BuildRequires: libyaml-devel pcre-devel apr-devel sqlite-dev
+Requires:      libyaml perl-ExtUtils-Embed pcre apr sqlite
 
 %description
 
